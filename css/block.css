@@ -1,0 +1,57 @@
+.block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 0;
+  gap: 1rem;
+}
+
+.block div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: hsla(0, 0%, 9%, 0.8);
+  border-radius: 1rem;
+  transition: 0.1s;
+
+  img {
+    width: 80%;
+    height: 80%;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+}
+
+.block div p {
+  text-align: center;
+  width: 80%;
+}
+
+.active {
+  background-color: hsla(100, 100%, 100%, 0.8) !important;
+  transition: 0.1s;
+  h2 {
+    color: black !important;
+  }
+  p {
+    color: black !important;
+  }
+}
+
+.block div:hover {
+  img {
+    transform: scale(0.8);
+    transition: 0.5s;
+  }
+}
+
+a {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .block {
+    grid-template-columns: 1fr;
+  }
+}
