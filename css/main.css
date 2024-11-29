@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  user-select: none;
+  user-select: none !important;
   font-family: Dosis;
   scrollbar-width: none;
   color: white;

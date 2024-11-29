@@ -39,15 +39,25 @@
   }
 }
 
-.block div:hover {
+a {
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.block div:active {
   img {
     transform: scale(0.8);
     transition: 0.5s;
   }
 }
 
-a {
-  text-align: center;
+@media (hover: hover) {
+  .block div:hover {
+    img {
+      transform: scale(0.8);
+      transition: 0.5s;
+    }
+  }
 }
 
 @media (max-width: 800px) {
