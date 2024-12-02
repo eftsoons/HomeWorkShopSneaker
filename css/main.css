@@ -9,6 +9,16 @@
 
 body {
   background-color: black;
+  animation: animopacity 0.5s ease-in-out;
+}
+
+@keyframes animopacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 header {
